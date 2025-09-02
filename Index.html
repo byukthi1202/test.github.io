@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header styles */
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #537188;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #537188;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #537188 60%, #cbb4d4 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.about h2 {
+  color: #537188;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Projects Section */
+.projects {
+  padding: 40px 0;
+}
+
+.projects h2 {
+  color: #537188;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(83,113,136,0.06);
+  padding: 18px 16px;
+  flex: 1 1 300px;
+  min-width: 260px;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(83,113,136,0.12);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: #537188;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Contact Section
